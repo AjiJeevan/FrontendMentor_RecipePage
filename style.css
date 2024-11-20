@@ -1,0 +1,151 @@
+@font-face {
+    font-family: customFontYoungSrif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+  @font-face {
+    font-family: customOutfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+body{
+    background-color:hsl(330, 100%, 98%);
+}
+
+.main-div{
+   margin: 80px 250px;
+   background-color: hsl(0, 0%, 100%);
+   border-radius: 10px; 
+}
+
+.container{
+    padding: 40px 40px;
+    object-fit: contain;
+}
+
+.omelette-img{
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.recipe-name{
+    padding: 10px 0px;
+    font-family: customFontYoungSrif;
+    font-weight: 400;
+    font-size:3vmax;
+}
+
+.recipe-description{
+    text-align: justify;
+}
+
+p,li, .table-content  {
+    font-family: customOutfit;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+.after-ingred{
+    border-top: 0.5px solid hsl(30, 10%, 34%) ;
+}
+
+.prep-list li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-list li, 
+.ingredients-list li,
+.instructions-list li{
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+
+.prep-head{
+    font-family: customOutfit;
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.prep-time{
+    background-color:hsl(330, 100%, 98%);
+    margin-top: 25px;
+    padding:20px 0px;
+}
+
+.ingredients-head, 
+.instructions-head,
+.nutrition-head {
+    color: hsl(14, 45%, 36%);
+    font-family: customFontYoungSrif;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.ingredients-list, .instructions-list{
+    padding-left: 20px;
+}
+.ingredients-list li::marker, .instructions-list li::marker{
+    color: hsl(14, 45%, 36%);;
+}
+
+.hr-tag{
+    margin: 10px 0px;
+    border-bottom: 1px solid hsl(30, 18%, 87%)
+}
+
+.nutrition-des{
+    padding:10px 0px;
+}
+
+.nutrition-val{
+    font-family: customOutfit;
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.nutrition-table{
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+li {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .main-div{
+        margin: 0px; 
+     }
+    .container{
+        padding: 0px;
+    }
+    .recipe-name-div, 
+    .ingredients,
+    .hr-tag,
+    .instructions,
+    .nutrition,
+    .nutrition-table,
+    td
+    {
+        margin: 0px 20px;
+        object-fit: contain;
+    }
+    .prep-time{
+        margin: 10px 10px;
+    }
+}
