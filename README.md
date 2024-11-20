@@ -13,7 +13,7 @@
 ### What I learned
 
 - learned to use custom font
-- learned to styling <li> tag
+- learned to styling listing tag
 
 
 ```css
